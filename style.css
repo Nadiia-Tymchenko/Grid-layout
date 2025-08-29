@@ -1,3 +1,153 @@
 * {
-    
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-container {
+  background-color: #FFFFFF;
+  margin: 0;
+  box-shadow: 0px 2px 5px rgba(1, 1, 0, 0.3);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.bg-image-top {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  z-index: -1;
+}
+
+.nav-list {
+  font: 15px verdana sans-serif;
+  list-style-type: none;
+  padding: 0 30px;
+  
+  display: flex;
+  gap: 10px 40px;
+}
+
+.nav-item {
+  text-decoration: none;
+}
+
+.main-wrapper {
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.team-members-list {
+  padding: 0;
+  
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.member-card img {
+  max-width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.member-card{
+  list-style-type: none;
+}
+
+.member-name {
+  font-size: 24px ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.member-position {
+  font-size: 15px ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: grey;
+}
+
+.button-wrapper {
+  background-color: #e0e0e0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.contact-button {
+  background-color: #e0e0e0;
+  color: #333333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  font: 15px verdana sans-serif;
+}
+
+.footer-wrapper {
+  padding: 20px;
+  
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: baseline;
+}
+
+.footer-wrapper a:visited {
+  color: #FFFFFF;
+}
+
+.footer-wrapper a:hover {
+  color: green;
+}
+
+.about-info {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.about-section-name {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  padding: 25;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }

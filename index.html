@@ -5,71 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BR Architects</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./assets/" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="logo">
-            <a href="#">
-                <div class="logo-br">BR</div>
-                <div>Architects</div>
-            </a>
+    <header class="main-header">
+      <div class="header-container">
+        <div href="#" class="logo">
+          <a class="logo-br">BR</a>
+          <a class="logo-architect">Architects</a>
         </div>
+      <nav>
         <ul class="nav-list">
           <li>
-            <a href="#">Projects</a>
+            <a href="#" class="nav-item">Projects</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#" class="nav-item">About</a>
           </li>
           <li>
-            <a href="#">Contact</a>
-        </li>
+            <a href="#" class="nav-item">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
+
+     <section class="bg-image-top">
+        <img src="./assets/architect.jpg" alt="" />
+      </section>
+
     <main>
-      <section class="bg-image-top"></section>
-      <section class="projects">
+      <div class="main-wrapper">
         <h2>Projects</h2>
-        <div class="project-grid">
+        <section class="project-grid">
           <div class="project-item">
             <img src="./assets/house5.jpg" alt="Summer House" />
             <h3>Summer House</h3>
           </div>
           <div class="project-item">
-            <img src="./assets/house2 (1).jpg" alt="Brick House" />
-            <h3>Brick House</h3>
+              <img src="./assets/house2 (1).jpg" alt="Brick House" />
+              <h3>Brick House</h3>
           </div>
           <div class="project-item">
-            <img src="./assets/house3 (1).jpg" alt="Renovated" />
-            <h3>Renovated</h3>
+              <img src="./assets/house3 (1).jpg" alt="Renovated" />
+              <h3>Renovated</h3>
           </div>
           <div class="project-item">
-            <img src="./assets/house4.jpg" alt="Barn House" />
-            <h3>Barn House</h3>
+              <img src="./assets/house4.jpg" alt="Barn House" />
+              <h3>Barn House</h3>
           </div>
           <div class="project-item">
-            <img src="./assets/house2 (1).jpg" alt="Summer House" />
-            <h3>Summer House</h3>
+              <img src="./assets/house2 (1).jpg" alt="Summer House" />
+              <h3>Summer House</h3>
           </div>
           <div class="project-item">
-            <img src="./assets/house5.jpg" alt="Brick House" />
-            <h3>Brick House</h3>
+              <img src="./assets/house5.jpg" alt="Brick House" />
+              <h3>Brick House</h3>
           </div>
           <div class="project-item">
-            <img src="./assets/house4.jpg" alt="Renovated" />
-            <h3>Renovated</h3>
+              <img src="./assets/house4.jpg" alt="Renovated" />
+              <h3>Renovated</h3>
           </div>
           <div class="project-item">
             <img src="./assets/house3 (1).jpg" alt="Barn House" />
             <h3>Barn House</h3>
           </div>
-        </div>
-      </section>
+        </section>
       <section class="about">
-        <p>
+        <h3 class="about-section-name">About</h3>
+        <p class="about-info">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -83,53 +85,65 @@
         <ul class="team-members-list">
           <li class="member-card">
             <img src="./assets/team2.jpg" alt="John Doe" />
-            <h2>John Doe</h2>
-            <h3 class="member-position">CEO & Founder</h3>
-            <p>
+            <h2 class="member-name">John Doe</h2>
+            <p class="member-position">CEO & Founder</p>
+            <p class="member-description">
               Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
               sodales pellentesque elementum.
             </p>
-            <button class="contact-button">Contact</button>
+            <div class="button-wrapper">
+              <button class="contact-button">Contact</button>
+            </div>
+            
           </li>
           <li class="member-card">
             <img src="./assets/team1.jpg" alt="Jane Doe" />
-            <h2>Jane Doe</h2>
-            <h3 class="member-position">Architect</h3>
+            <h2 class="member-name">Jane Doe</h2>
+            <p class="member-position">Architect</p>
             <p>
               Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
               sodales pellentesque elementum.
             </p>
-            <button class="contact-button">Contact</button>
+            <div class="button-wrapper">
+              <button class="contact-button">Contact</button>
+            </div>
           </li>
           <li class="member-card">
             <img src="./assets/team3.jpg" alt="Mike Ross" />
-            <h2>Mike Ross</h2>
-            <h3 class="member-position">Architect</h3>
+            <h2 class="member-name">Mike Ross</h2>
+            <p class="member-position">Architect</p>
             <p>
               Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
               sodales pellentesque elementum.
             </p>
-            <button class="contact-button">Contact</button>
+            <div class="button-wrapper">
+                <button class="contact-button">Contact</button>
+            </div>
           </li>
           <li class="member-card">
             <img src="./assets/team4.jpg" alt="Dan Star" />
-            <h2>Dan Star</h2>
-            <h3 class="member-position">Architect</h3>
+            <h2 class="member-name">Dan Star</h2>
+            <p class="member-position">Architect</p>
             <p>
               Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
               sodales pellentesque elementum.
             </p>
-            <button class="contact-button">Contact</button>
+            <div class="button-wrapper">
+              <button class="contact-button">Contact</button>
+            </div>
           </li>
         </ul>
       </section>
       <section class="bg-image-bottom">
-        <img src="./assets/map.jpg" alt="map">
+        <img src="./assets/map.jpg" alt="map" />
       </section>
+    </div>
     </main>
     <footer>
-      <p>Powered by</p>
-      <a href="#">w3.css</a>
+      <div class="footer-wrapper"> 
+        <p>Powered by</p>
+        <a href="#">w3.css</a>
+    </div>
     </footer>
   </body>
 </html>
