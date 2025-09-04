@@ -8,11 +8,17 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.header-container {
-  background-color: #ffffff;
-  margin: 0;
-  box-shadow: 0px 2px 5px rgba(1, 1, 0, 0.3);
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.header-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -24,6 +30,21 @@ body {
   align-items: center;
   gap: 15px;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 3px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(1, 1, 0, 0.3);
+  letter-spacing: 4px;
+}
+
+.logo {
+  padding: 5px;
+  margin: 5px;
+}
+
+.logo:hover {
+  background-color: #e0e0e0;
 }
 
 .logo a:visited,
@@ -32,39 +53,65 @@ body {
 }
 
 .logo-br {
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  margin-left: 25px;
+  margin-left: 15px;
   margin-right: 5px;
+
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .logo-architect {
-  font-size: 18px;
-  text-decoration: none;
+  font-size: 15px;
+  padding: 15px;
+  padding-bottom: 3px;
+  padding-top: 3px;
 }
 
 .nav-list {
-  font-size: 18px;
-  list-style-type: none;
-  padding: 0 30px;
+  font-size: 15px;
+  padding: 0px 30px;
 
   display: flex;
   flex-wrap: wrap;
-  gap: 10px 40px;
+  gap: 10px 25px;
 }
 
 .nav-item {
-  text-decoration: none;
+  padding: 5px 10px;
 }
 
-.bg-image-top img {
-  display: block;
+.nav-item:hover {
+  width: 100%;
+  background-color: #e0e0e0;
+}
+
+.bg-image-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 80%;
-  height: auto;
+  height: 85vh;
   margin: 0 auto;
-  position: relative;
-  z-index: -1;
+  padding-top: 75px;
+
+  background-image: url(./assets/images/architect.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-name {
+  color: white;
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: 4px;
+}
+
+.bg-br {
+  background-color: #000000;
+  padding: 8px 16px;
+  opacity: 0.75;
+  font-weight: bold;
 }
 
 .main-wrapper {
@@ -73,10 +120,13 @@ body {
   padding: 0 20px;
 }
 
+figure {
+  margin: 0px 10px;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
 }
 
 .project-item img {
@@ -89,27 +139,25 @@ body {
 }
 
 .image-name {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   color: white;
   background-color: black;
   padding: 8px 16px;
 
   position: absolute;
-  top: -18px;
+  top: 0px;
 }
 
-.about-section-name {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.about-section-name,
+.projects-section-name {
   font-size: 24px;
-  padding: 25;
+  margin-bottom: 20px;
   border-bottom: 1px solid #ccc;
   padding-bottom: 25px;
-  padding-top: 25px;
+  padding-top: 75px;
 }
 
 .about-info {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15px;
   padding: 0;
   margin-bottom: 50px;
@@ -138,12 +186,10 @@ body {
 
 .member-name {
   font-size: 24px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .member-position {
   font-size: 15px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: grey;
 }
 
@@ -155,14 +201,18 @@ body {
 }
 
 .contact-button {
+  width: 100%;
   background-color: #e0e0e0;
   color: #333333;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 0px;
   font-size: 15px;
   cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #b4b2b2;
 }
 
 .bg-image-bottom {
@@ -195,12 +245,37 @@ footer {
   color: green;
 }
 
-@media screen and (max-width: 600px) {
-  .bg-image-top img {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .bg-image-top {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .team-members-list {
+    flex-wrap: wrap;
+  }
+
+  .member-card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .bg-image-bottom {
     width: 100%;
     margin: 0 auto;
     height: auto;
-    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bg-image-top {
+    width: 100%;
+    height: 40vh;
   }
 
   .team-members-list {
@@ -221,35 +296,3 @@ footer {
     max-width: 600px;
   }
 }
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  .bg-image-top img {
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-  }
-
-  .team-members-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .member-card {
-    flex: 1 1 calc(50% - 20px);
-    max-width: calc(50% - 20px);
-  }
-
-  .project-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-  }
-
-  .bg-image-bottom img {
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-  }
-}
-
